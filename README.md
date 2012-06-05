@@ -1,5 +1,7 @@
 eqs
 ===
+[EQMON @ jit.su](https://eqmon.jit.su)
+
 ![EQMON Default View](https://github.com/skylamer/eqs/raw/master/images/screen_defaultview.png)
 
 ![EQMON Tab View](https://github.com/skylamer/eqs/raw/master/images/screen_tabview.png)
