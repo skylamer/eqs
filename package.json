@@ -1,0 +1,27 @@
+{
+  "name": "eqmon",
+  "preferGlobal": "true",
+  "version": "0.0.1",
+  "author": "skylamer",
+  "description": "a earthquake monitoring web app",
+  "contributors": [ 
+    {
+      "name": "Mikhail Dimitrov",
+      "email": "cgskylamer@gmail.com"
+    } 
+  ],
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "main": "./server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skylamer/eqs.git"
+  },
+  "dependencies" : {
+    "mime"   :  "*"
+  },
+  "engine": {
+    "node": ">= 0.6"
+  }
+}
