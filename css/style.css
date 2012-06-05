@@ -1,0 +1,87 @@
+@import "grid.css";
+@import "ui.css";
+@import "forms.css";
+@import "mobile.css";
+@import "normalize.css";
+@import "restyle.css";
+@import "removing_ads.css";
+@import "h5bp.css";
+
+
+::-webkit-scrollbar{margin-right:5px;background-color:#eee;width:10px;}::-webkit-scrollbar-track{-webit-box-shadow:0 0 2px #ccc;box-shadow:0 0 2px #ccc;}::-webkit-scrollbar-thumb{border:1px #eee solid;border-radius:4px;background:#777;-webit-box-shadow:0 0 8px #555 inset;box-shadow:0 0 8px #555 inset;-webit-transition:all .3s ease-out;transition:all .3s ease-out;}::-webkit-scrollbar-thumb:window-inactive{background:#bbb;box-shadow:0 0 8px #999 inset;}::-webkit-scrollbar-thumb:hover{background:#999;}
+
+
+
+
+input {max-width: 100%}
+button {font-family: Segoe UI Light}
+.search {
+border:3px solid transparent;
+padding:11px;
+box-shadow: inset 0 0 3px 1px #666
+}
+*                         {
+                            white-space: pre-line;
+                            text-overflow: ellipsis;
+                            word-wrap: break-word; }
+footer ul,
+footer li               {  display:none;*display: inline-block }
+footer                  {
+                            position: fixed;
+                            height: 20px;
+                            width: 100%;
+                            bottom: 0;
+                            border-top: 3px solid #fff;
+                            background: rgba(233,233,233,.77); }
+html                    {  font-family: Segoe UI }
+.gfc-title              {
+                            font-size: 33px;
+                            font-family: SEGOE UI LIGHT; }
+.gfc-results          {  font-family: Segoe UI }
+.gf-snippet          {
+                            padding: 9px 11px;
+                            box-shadow: inset 0 0 6px 1px rgba(1,1,1,.33);
+                            font-size: 11px;
+                            font-weight: 900; }
+.gfc-resultsRoot   {
+                            padding-right: 25px;
+                            margin: 0 11px;
+                            max-width: 200px;
+                            vertical-align: top;
+                            display: inline-block; }
+.gf-relativePublishedDate {  font-size: 13px }
+#eq                     {
+                            *margin-top: -20px;
+                            width: 100%; }
+.github                { }
+#eqp                   {  display: none }
+.github li              {
+                            position: relative;
+                            display: inline-block; }
+.metro *               {  color: initial }
+form                     {
+                            box-shadow: inset 0 0 6px 1px gray, 0 0 3px 1px #aaa;
+                            border: 1px solid #777;
+                            padding: 11px 0;
+                            text-align: center;
+                            background: rgba(33,33,33,.1); }
+form label             {  display: none }
+.highlight              {
+                            background-color: #ffb;
+                            transition: all 1s linear; }
+.gfc-tabData         {
+                            max-width: initial;
+                            padding: 0; }
+                            
+   form.custom div.custom.dropdown {
+   *margin-left:41%;
+   *float:right;
+   position:absolute;
+   right:16px;
+   bottom:1px;
+    }
+    .display-grid .row { background: #eee; margin-bottom: 8px; }
+
+		.display-grid .column, .display-grid .columns { background: #ddd; }
+        .row{max-width:100%}
+    #options{display:none}

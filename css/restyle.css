@@ -1,0 +1,74 @@
+/* ===[ The mixed reset from all of them ~80 lines ]=== */
+html {
+    overflow-y: scroll;
+    color: #000;
+    background: #fff;
+    border: 0;
+    outline: 0;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    background: transparent;
+    line-height: inherit;
+    text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:link, :visited {
+    text-decoration: none;
+    outline: none;
+}
+/*  :hover */
+fieldset, img, abbr, acronym, a img, :link img, :visited img, dfn {
+    vertical-align: middle;
+    font-variant: normal;
+    border: 0 none;
+    outline: none;
+}
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal }
+ol, ul, li, dir, menu { list-style: none }
+caption, th, td {
+    text-align: left;
+    vertical-align: top;
+}
+blockquote, q { quotes: none }
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+sup { vertical-align: text-top }
+sub { vertical-align: text-bottom }
+legend { color: #000 }
+a, ins {
+    text-decoration: none;
+    outline: none;
+}
+hr { margin: 11px 0 }
+mark { font-style: italic }
+marquee {
+    overflow: inherit;
+    binding: none;
+}
+blink { text-decoration: none }
+nobr { white-space: normal }
+del { text-decoration: line-through }
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+input, textarea, select {
+    vertical-align: middle;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-size: 100%;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Earthquakes watching</title>
+  <style>
+    @import "css/style.css";
+  </style>
+  <!--<script src="javascripts/modernizr.foundation.js"></script>-->
+
+  <!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  <!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+</head>
+<body class=container>
+
+<section class=row>
+<section class="twelve columns">
+<form class="custom nice">
+<label for=q>Search from here... /case sensitive/</label>
+<!--<ul class=github>
+<li class=dnow></li>
+<li>Feel free to fork</li>
+    <li>
+        <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=skylamer&repo=eqs&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px"></iframe>
+      </li>
+      <li>
+        <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=skylamer&repo=eqs&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+      </li>
+</ul>
+-->
+<input type=search  name=q results=1 x-webkit-speech autocomplete=off placeholder class="search" />
+<select id=options>
+<option value=tabs>Tab view</option>
+<option value=default selected>Default view</option>
+</select>
+<button type=submit class="metro-button default nice white button">Search</button>
+</section>
+</form>
+</section>
+</section>
+<section class=row>
+<!--<span class="sort" data-sort="gfc-title">Sort features</span>-->
+<section id=eq class=" twelve columns panel"><span class=load>Loading latest eqs...</span></section>
+</section>
+<!--<section id=eqp><span class=load>Loading latest eqs...</span></section>-->
+<section class=row>
+<footer class="twelve columns panel">
+<ul>
+<li>
+<li>
+<li>
+<li>
+<li>
+<li><!--<a id=pagetwo href=#>wqewq</a>-->
+</ul>
+</footer>
+</section>
+<!--<section id=hisz>
+<span class="link"></span>
+<span class=author></span>
+<span class=description></span>
+<span class="type"></span>
+<span class="title"></span>
+<span class="feedUrl"></span>
+
+<section class=entries>
+<a class="title" href=""></a>
+<a class="link" href=""></a>
+</section>
+
+</section>-->
+<script src=http://www.google.com/jsapi></script>
+<script src=js/jquery.min.js></script>
+<!--<script src=js/jquery-git.js></script>
+<!--<script src=js/transparency.min.js></script>
+<script src=js/sammy.js></script>-->
+<script src=js/jquery.customforms.js></script>
+<!--<script src=js/prefix.js></script>-->
+<script>
+  //google.load("jquery","1")
+  google.load("feeds","1")
+  //google.load("webfont","1")
+   /*function feedLoaded(result) {
+      if (!result.error) {
+        // Grab the container we will put the results into
+        var $cont_hisz = $("#hisz"),
+        $cont_usgs = $("#usgs");
+        //$cont_hisz.html("")
+        console.log(result)
+        $cont_hisz.render(result.feed)
+        $cont_usgs.render(result.feed)
+        // Loop through the feeds, putting the titles onto the page.
+        // Check out the result object for a list of properties returned in each entry.
+        // http://code.google.com/apis/ajaxfeeds/documentation/reference.html#JSON
+        /*for (var i = 0; i < result.feed.entries.length; i++) {
+          var entry = result.feed.entries[i];
+          $container.render(entry.title);
+        }*/
+      //}
+    // }
+    
+    function OnLoad(o) {
+      // Create a feed instance that will grab Digg's feed.
+      //var feed = new google.feeds.Feed("http://feeds.feedburner.com/RsoeEdis-EmergencyAndDisasterInformation");
+     var feedControl = new google.feeds.FeedControl();
+     //     feedControlp = new google.feeds.FeedControl()
+     feedControl.setNumEntries(7)
+     //101)
+     //feedControlp.setNumEntries(101)
+    feedControl.addFeed("http://feeds.feedburner.com/RsoeEdis-EmergencyAndDisasterInformation", "HISZ Rsoe");
+    feedControl.addFeed("http://earthquake.usgs.gov/earthquakes/feed/atom/significant/month", "USGS");
+    feedControl.addFeed("http://www.emsc-csem.org/service/rss/rss.php?typ=emsc&magmin=6", "EMSC");
+    feedControl.addFeed("http://geofon.gfz-potsdam.de/eqinfo/list.php?fmt=rss", "Geofon Potsdam");
+   /*   feedControl.addFeed("http://rss.people.com/web/people/rss/topheadlines/index.xml",
+      "PPL" )
+      feedControl.addFeed("http://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml",
+       'E-Online')
+        feedControl.addFeed("http://www.tmz.com/rss.xml",'TMZ')
+         feedControl.addFeed("http://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml",
+       'E-Online')
+        feedControl.addFeed("http://www.tmz.com/rss.xml",'TMZ')
+         feedControl.addFeed("http://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml",
+       'E-Online')
+        feedControl.addFeed("http://www.tmz.com/rss.xml",'TMZ')
+         feedControl.addFeed("http://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml",
+       'E-Online')
+        feedControl.addFeed("http://www.tmz.com/rss.xml",'TMZ')
+       */ //feedControlp.addFeed("http://feeds.feedburner.com/RsoeEdis-EmergencyAndDisasterInformation", "HISZ Rsoe");
+    /*feedControlp.addFeed("http://earthquake.usgs.gov/earthquakes/feed/atom/significant/month", "USGS");
+    feedControlp.addFeed("http://www.emsc-csem.org/service/rss/rss.php?typ=emsc&magmin=6", "EMSC");
+    feedControlp.addFeed("http://geofon.gfz-potsdam.de/eqinfo/list.php?fmt=rss", "Geofon Potsdam");//feedControl.addFeed("http://ajax.googleapis.com/ajax/services/feed/find?v=1.0&q=earthquakes","Eq Find Infos")
+//f//eedControl.addFeed("http://feeds.feedburner.com/Techcrunch", "TechCrunch");
+//feedControl.addFeed("http://www.digg.com/rss/index.xml", "Digg");
+//feedControl.addFeed("http://feeds.feedburner.com/Techcrunch", "TechCrunch");*/
+    if(o==="tabs")
+     var ops = {
+      drawMode:  google.feeds.FeedControl.DRAW_MODE_TABBED 
+     }
+     else var ops={}
+      // Calling load sends the request off.  It requires a callback function.
+      feedControl.draw(document.getElementById("eq"),ops);
+      if(o!=="tabs" && $(".gfc-resultsbox-visible").children().length>=5)
+      $(".gfc-resultsbox-visible > *:nth-child(4n)").after("<hr>");
+     // $("#options").show()
+     //feedControlp.draw(document.getElementById("eqp"));
+      
+      
+      
+      
+      
+    }
+     $("form").on("submit", function (e) {
+     e.preventDefault();
+     return !1;
+     })
+     $(".search").on("change", function(e) {
+     
+     var value=$(this).val();
+     if(value.trim()==="" || value.length>100)
+     return;
+     console.log("Searching value: "+value)
+     //if($(".gf-title:contains("+$(this).val()+")")) {
+     //console.log("YEAAAAAAAAAAA!");
+     
+     //}
+     $(".gf-title").removeClass("highlight")
+     $(".gf-title:contains("+value+"), .gf-title:contains("+value.toLowerCase()+"),.gf-title:contains( "+value.toUpperCase()+")").addClass("highlight")
+     
+     console.log(e)
+     console.log(this)
+     console.log($(this))
+     //#()
+     return !1;
+     })
+     
+     $("#options").on("change", function() {
+     if($(this).val()==="tabs")
+     // feedControl.draw(document.getElementById("eq"),{drawMode:google.feeds.FeedControl.DRAW_MODE_TABBED});
+     google.setOnLoadCallback(OnLoad($(this).val()));
+     else google.setOnLoadCallback(OnLoad());
+     })
+    /*$("#pagetwo").on("click", function(e) {
+    e.preventDefault();
+    $("#eq").hide();
+    $("#eqp").show();
+    console.log("eqp showed")
+    console.log("")
+    console.info("OK")
+    return !0;
+    })
+    */
+    
+    /*setInterval(function() {
+    $(".dnow").text("").append(new Date().toJSON())
+    }, 10000)*/
+    $(document).ready(function() {
+    //var $select = "<select class=nentries><option disabled>Num of entries</option><option value=0 disabled>-------------</option><option selected value=100>100</option><option value=50>50</option><option value=25>25</option><option value=15>15</option><option value=10>10</option><option value=5>5</option><option value=1>1</option></select>"
+    
+    google.setOnLoadCallback(OnLoad);
+    /*setTimeout(function() {
+    //$(".gfc-title").append($select);
+    //$(".nentries").on("change", function () {
+    //this feed setnum entries to feed control now!
+    //$(this).val
+    })
+    }, 1000);*/
+    })
+</script>
+</body>
+</html>
