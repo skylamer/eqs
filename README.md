@@ -15,3 +15,4 @@ have search, and view with tabs and default
   * do a little design changes
   * realtime notifications
   * bookmarklet
+  * can add a custom sources
