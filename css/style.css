@@ -25,13 +25,14 @@ box-shadow: inset 0 0 3px 1px #666
                             text-overflow: ellipsis;
                             word-wrap: break-word; }
 footer ul,
-footer li               {  display:none;*display: inline-block }
+footer li               {  *display:none;display: inline-block }
 footer                  {
-                            position: fixed;
-                            height: 20px;
+                            *position: fixed;
+                            height: 100%;
                             width: 100%;
                             bottom: 0;
                             border-top: 3px solid #fff;
+                            
                             background: rgba(233,233,233,.77); }
 html                    {  font-family: Segoe UI }
 .gfc-title              {
@@ -53,7 +54,7 @@ html                    {  font-family: Segoe UI }
 #eq                     {
                             *margin-top: -20px;
                             width: 100%; }
-.github                { }
+.github                { margin:0;padding:0;width:100% }
 #eqp                   {  display: none }
 .github li              {
                             position: relative;
