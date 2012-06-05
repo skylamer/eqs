@@ -14,7 +14,7 @@
 
 
 input {max-width: 100%}
-button {font-family: Segoe UI Light}
+button {font-family:Segoe UI;font-weight:100;font-family: Segoe UI Light}
 .search {
 border:3px solid transparent;
 padding:11px;
@@ -37,6 +37,9 @@ footer                  {
 html                    {  font-family: Segoe UI }
 .gfc-title              {
                             font-size: 33px;
+                            /* ff fix */
+                            font-family: Segoe UI;
+                            font-weight: 100;
                             font-family: SEGOE UI LIGHT; }
 .gfc-results          {  font-family: Segoe UI }
 .gf-snippet          {
@@ -71,6 +74,8 @@ form label             {  display: none }
                             background-color: #ffb;
                             transition: all 1s linear; }
 .gfc-tabData         {
+                            /* a fix */
+                            max-width: 100%;
                             max-width: initial;
                             padding: 0; }
                             
