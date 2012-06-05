@@ -12,7 +12,7 @@
 
 
 
-
+iframe {max-width:250px;height:25px}
 input {max-width: 100%}
 button {font-family:Segoe UI;font-weight:100;font-family: Segoe UI Light}
 .search {
