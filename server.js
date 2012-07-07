@@ -1,16 +1,14 @@
-var libpath = require("path"),
-    http = require("http"),
+var http = require("http"),
     fs = require("fs"),
     url = require("url"),
-    mime = require("mime");
-
-var path = ".";
-var port = 8088;
+    mime = require("mime"),
+    path = ".",
+    port = 8088;
 
 http.createServer(function (request, response) {
 
     var uri = url.parse(request.url).pathname;
-    var filename = libpath.join(path, uri);
+    var filename = require("path").join(path, uri);
 
     fs.exists(filename, function (exists) {
         if (!exists) {
