@@ -12,7 +12,7 @@ http.createServer(function (request, response) {
     var uri = url.parse(request.url).pathname;
     var filename = libpath.join(path, uri);
 
-    libpath.exists(filename, function (exists) {
+    fs.exists(filename, function (exists) {
         if (!exists) {
             response.writeHead(404, {
                 "Content-Type": "text/plain"
